@@ -1,0 +1,23 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🛡️ Running pre-push checks..."
+
+# 1. Enforce AI Policy: Block unauthorized test deletions
+echo "  [1/2] Verifying test suite integrity..."
+DELETED_TESTS=$(git diff --name-only --diff-filter=D HEAD@{1} HEAD 2>/dev/null | grep -E '^tests/' || true)
+
+if [ -n "$DELETED_TESTS" ]; then
+  echo "❌ Push Rejected by Policy: Deletion of test files is strictly prohibited under .antigravityrules:"
+  echo "$DELETED_TESTS"
+  exit 1
+fi
+
+# 2. Execute Test Suite
+echo "  [2/2] Executing Vitest & accessibility test suites..."
+npm test || {
+  echo "❌ Push Rejected: Test suite execution failed. Broken code cannot leave local environment."
+  exit 1
+}
+
+echo "✅ Pre-push verification passed successfully."

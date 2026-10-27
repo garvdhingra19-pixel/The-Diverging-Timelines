@@ -1,0 +1,129 @@
+{
+  "id": "arctic",
+  "name": "Arctic Cryosphere",
+  "region": "Svalbard & Greenland Ice Sheet · Polar Tundra",
+  "summary": "Rapid polar amplification causing ice sheet calving, albedo feedback collapse, and irreversible permafrost methane thawing.",
+  "baselineYear": 2025,
+  "coordinates": {
+    "lat": 78.2232,
+    "lng": 15.6267
+  },
+  "hotspots": [
+    {
+      "id": "arctic-tidewater-glacier",
+      "title": "Tidewater Glacier Calving Margin",
+      "x": 38,
+      "y": 48,
+      "description": "Marine-terminating glacier fronts undergoing warm bottom-water ablation.",
+      "category": "cryosphere",
+      "impactCarryOn": "Dynamic ice discharge triples, accelerating global mean sea level contribution beyond 12mm/decade.",
+      "impactProtect": "Ocean warming stabilizes; grounded ice sheet margins preserve stabilizing sea-ice buttresses."
+    },
+    {
+      "id": "arctic-permafrost-palsa",
+      "title": "Continuous Permafrost & Tundra Peatland",
+      "x": 68,
+      "y": 62,
+      "description": "Ancient subterranean carbon reservoir storing double the carbon currently in the atmosphere.",
+      "category": "ecology",
+      "impactCarryOn": "Widespread thermokarst slumping unlocks gigatons of methane and CO2 into the atmosphere.",
+      "impactProtect": "Revegetation and stabilized polar vortex limit thaw depth to upper active layers."
+    },
+    {
+      "id": "arctic-sea-ice-pack",
+      "title": "Multi-Year Polar Sea Ice Cap",
+      "x": 52,
+      "y": 25,
+      "description": "Earth's giant mirror reflecting solar radiation back into space.",
+      "category": "heat",
+      "impactCarryOn": "Ice-free Arctic summers become permanent by 2040, eliminating dark-albedo thermal buffer.",
+      "impactProtect": "Summer sea ice minimum rebounds to >4.5 million sq km, maintaining global jet stream stability."
+    }
+  ],
+  "stats": [
+    {
+      "id": "arctic-summer-ice",
+      "label": "Summer Sea Ice Extent",
+      "unit": "M sq km",
+      "baseline": 4.2,
+      "carryOn2050": 0.8,
+      "carryOn2100": 0.1,
+      "protect2050": 3.9,
+      "protect2100": 4.6,
+      "direction": "down",
+      "context": "September average sea-ice extent across the Arctic basin."
+    },
+    {
+      "id": "arctic-warming-rate",
+      "label": "Polar Temp Anomaly",
+      "unit": "°C",
+      "baseline": 2.8,
+      "carryOn2050": 5.4,
+      "carryOn2100": 8.6,
+      "protect2050": 3.2,
+      "protect2100": 2.4,
+      "direction": "up",
+      "context": "Polar amplification anomaly compared to pre-industrial temperatures."
+    },
+    {
+      "id": "arctic-permafrost-loss",
+      "label": "Near-Surface Permafrost Thaw",
+      "unit": "% loss",
+      "baseline": 15,
+      "carryOn2050": 52,
+      "carryOn2100": 81,
+      "protect2050": 25,
+      "protect2100": 28,
+      "direction": "up",
+      "context": "Fraction of top 3-meter permafrost volume degraded."
+    },
+    {
+      "id": "arctic-greenland-mass",
+      "label": "Greenland Ice Loss",
+      "unit": "Gt / year",
+      "baseline": 280,
+      "carryOn2050": 580,
+      "carryOn2100": 920,
+      "protect2050": 210,
+      "protect2100": 120,
+      "direction": "up",
+      "context": "Net annual gigatons of ice melted into surrounding oceans."
+    }
+  ],
+  "scenarios": {
+    "carryOn": {
+      "tagline": "Runaway Polar Thaw (SSP5-8.5)",
+      "description": "Total disruption of Arctic cryosphere drives planetary tipping cascades, dismantling northern mid-latitude weather patterns.",
+      "keyPoints": [
+        "Summer sea ice disappears completely as early as 2038",
+        "Deep permafrost collapse releases massive carbon feedback loops",
+        "Displacement of indigenous Arctic communities and polar fauna"
+      ],
+      "projectedTempRise2100": 7.8
+    },
+    "protect": {
+      "tagline": "Cryosphere Stabilization (SSP1-1.9)",
+      "description": "Rapid decarbonization curbs polar thermal amplification, allowing multi-year sea ice and grounded glaciers to reach equilibrium.",
+      "keyPoints": [
+        "Summer minimum ice cover stabilized above 4 million km²",
+        "Protected indigenous stewardship and international polar sanctuaries",
+        "Albedo preservation protects global mid-latitude climate stability"
+      ],
+      "projectedTempRise2100": 2.2
+    }
+  },
+  "sources": [
+    {
+      "title": "IPCC Special Report on the Ocean and Cryosphere in a Changing Climate (SROCC)",
+      "institution": "IPCC Cryosphere Working Group",
+      "url": "https://www.ipcc.ch/srocc/",
+      "year": 2019
+    },
+    {
+      "title": "Arctic Report Card 2023",
+      "institution": "National Oceanic and Atmospheric Administration (NOAA)",
+      "url": "https://arctic.noaa.gov/report-card/",
+      "year": 2023
+    }
+  ]
+}

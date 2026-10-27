@@ -1,0 +1,100 @@
+name: CI Quality Gate, Security Audit & Branch Protection
+
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+  pull-requests: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  secret-scan:
+    name: 🔒 Gitleaks Secret Scanning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks Secret Scanner
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  qa-and-test-gates:
+    name: 🧪 Type-Check, Lint, Tests, Axe & Budgets
+    runs-on: ubuntu-latest
+    needs: [secret-scan]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+
+      - name: TypeScript Type-Check
+        run: npm run type-check
+
+      - name: ESLint Code Quality
+        run: npm run lint
+
+      - name: Zod Landscape Content Validation
+        run: npm run validate
+
+      - name: Vitest Unit Suite
+        run: npm test
+
+      - name: Build Static Production Export
+        run: npm run build
+
+      - name: Verify JavaScript Performance Budget (<200 KB)
+        run: npm run check-budgets
+
+      - name: Install Playwright Chromium & System Dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright E2E User Flows (Desktop & Mobile)
+        run: npm run test:e2e
+
+      - name: Run Axe WCAG 2.2 AA Accessibility Audits
+        run: npm run test:a11y
+
+      - name: Run Lighthouse CI Performance & Accessibility Audit
+        run: npx @lhci/cli@0.14.x autorun
+        env:
+          LHCI_BUILD_CONTEXT__CURRENT_BRANCH: ${{ github.head_ref || github.ref_name }}
+
+      - name: Upload Static Export Artifact
+        uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: ./out
+
+  deploy-production:
+    name: 🚀 Deploy Static Production
+    runs-on: ubuntu-latest
+    needs: [qa-and-test-gates]
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: production
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to Cloudflare / GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

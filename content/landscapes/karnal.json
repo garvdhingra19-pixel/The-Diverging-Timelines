@@ -1,0 +1,129 @@
+{
+  "id": "karnal",
+  "name": "Karnal Agricultural Belt",
+  "region": "Haryana, India \u00b7 Indo-Gangetic Alluvial Plain",
+  "summary": "India's breadbasket facing dual perils of extreme March terminal heat stress and acute groundwater aquifer depletion.",
+  "baselineYear": 2025,
+  "coordinates": {
+    "lat": 29.6857,
+    "lng": 76.9905
+  },
+  "hotspots": [
+    {
+      "id": "karnal-alluvial-aquifer",
+      "title": "Overexploited Central Alluvial Aquifer",
+      "x": 38,
+      "y": 68,
+      "description": "Deep alluvial aquifer strata supplying 92% of local irrigation for intensive paddy.",
+      "category": "agriculture",
+      "impactCarryOn": "Aquifer depth plunges beyond 95m, causing widespread saline ingress and dry borewells.",
+      "impactProtect": "Direct seeded rice (DSR) and aquifer recharge shafts restore water table equilibrium to <40m."
+    },
+    {
+      "id": "karnal-cssri-fields",
+      "title": "Wheat Experimental Canopy & Salt Research Fields",
+      "x": 58,
+      "y": 42,
+      "description": "Prime agricultural research corridor developing climate-hardy cereal varieties.",
+      "category": "adaptation",
+      "impactCarryOn": "Terminal heat stress >38\u00b0C shrivels grains, slashing farm profitability by over 55%.",
+      "impactProtect": "Adoption of heat-tolerant wheat strains (PBW-1Zn/DBW-303) and drip fertigation stabilizes yields."
+    },
+    {
+      "id": "karnal-gt-road-mandi",
+      "title": "Grain Mandi & Rural Cold Storage Hub",
+      "x": 45,
+      "y": 28,
+      "description": "Critical regional food logistics terminal handling multi-state wheat and basmati commerce.",
+      "category": "infrastructure",
+      "impactCarryOn": "Chronic summer power grid trippings and heat stress cause substantial grain post-harvest spoilage.",
+      "impactProtect": "Solarized micro-grids and decentralized insulated grain silos safeguard regional food reserves."
+    }
+  ],
+  "stats": [
+    {
+      "id": "karnal-wheat-yield",
+      "label": "Wheat Harvest Yield",
+      "unit": "t / ha",
+      "baseline": 4.2,
+      "carryOn2050": 3.6,
+      "carryOn2100": 1.8,
+      "protect2050": 4.6,
+      "protect2100": 4.5,
+      "direction": "down",
+      "context": "Average Rabi season wheat productivity vulnerable to terminal heat shock during March grain-fill."
+    },
+    {
+      "id": "karnal-tubewell-cost",
+      "label": "Tube-Well Drilling Cost",
+      "unit": "\u20b9 k / bore",
+      "baseline": 59.0,
+      "carryOn2050": 114.0,
+      "carryOn2100": 212.0,
+      "protect2050": 62.0,
+      "protect2100": 55.0,
+      "direction": "up",
+      "context": "Capital cost required by smallholder farmers to drill deeper submersible boreholes as shallow aquifers fail."
+    },
+    {
+      "id": "karnal-water-table",
+      "label": "Groundwater Depth",
+      "unit": "meters",
+      "baseline": 34.0,
+      "carryOn2050": 68.0,
+      "carryOn2100": 68.0,
+      "protect2050": 37.5,
+      "protect2100": 27.7,
+      "direction": "up",
+      "context": "Depth to water table below surface in the intensive rice-wheat alluvial plain."
+    },
+    {
+      "id": "karnal-severe-heat",
+      "label": "Extreme Heatwave Days",
+      "unit": "days / yr",
+      "baseline": 32,
+      "carryOn2050": 58,
+      "carryOn2100": 104,
+      "protect2050": 31,
+      "protect2100": 40,
+      "direction": "up",
+      "context": "Annual days exceeding 42\u00b0C, severely curtailing agricultural daytime labor capacity."
+    }
+  ],
+  "scenarios": {
+    "carryOn": {
+      "tagline": "Agricultural Desiccation (SSP5-8.5)",
+      "description": "Terminal heat waves collapse cereal grain weights while plunging groundwater forces capital-intensive deep tube-wells, precipitating rural agrarian debt.",
+      "keyPoints": [
+        "Wheat yields contract by over 38% due to March heat spikes",
+        "Tube-well re-drilling costs exceed \u20b9180k per bore as water table falls below 90m",
+        "Over 45 days per year exceed dangerous 42\u00b0C threshold for agricultural laborers"
+      ],
+      "projectedTempRise2100": 4.4
+    },
+    "protect": {
+      "tagline": "Climate-Smart Agroecology (SSP1-1.9)",
+      "description": "Widespread adoption of direct-seeded rice, laser land leveling, and heat-resilient cultivars stabilizes the aquifer and secures national food supply.",
+      "keyPoints": [
+        "Wheat productivity preserved at >4.6 tonnes/ha with heat-tolerant cultivars",
+        "Groundwater table stabilized at sustainable 36m with artificial recharge",
+        "Solar irrigation pumps and farm solarization slash agricultural operating costs"
+      ],
+      "projectedTempRise2100": 1.6
+    }
+  },
+  "sources": [
+    {
+      "title": "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
+      "institution": "NASA Center for Climate Simulation (NCCS)",
+      "url": "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6",
+      "year": 2022
+    },
+    {
+      "title": "Climate change impacts on wheat productivity and groundwater in Haryana",
+      "institution": "ICAR-Central Soil Salinity Research Institute (CSSRI), Karnal",
+      "url": "https://cssri.icar.gov.in/",
+      "year": 2023
+    }
+  ]
+}

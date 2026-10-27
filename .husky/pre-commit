@@ -1,0 +1,27 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit static analysis..."
+
+# 1. Type Checking
+echo "  [1/3] Running TypeScript static analysis..."
+npm run type-check || {
+  echo "❌ Pre-commit Hook Failed: TypeScript errors detected."
+  exit 1
+}
+
+# 2. Content Zod Schema Validation
+echo "  [2/3] Validating climate landscape schemas via Zod..."
+npm run validate || {
+  echo "❌ Pre-commit Hook Failed: Landscape content validation failed."
+  exit 1
+}
+
+# 3. Linter
+echo "  [3/3] Running ESLint..."
+npm run lint || {
+  echo "❌ Pre-commit Hook Failed: ESLint violations found."
+  exit 1
+}
+
+echo "✅ Pre-commit static analysis passed."

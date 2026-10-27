@@ -1,0 +1,106 @@
+{
+  "project": "Four Landscapes: Climate Projections & Human Impact Explorer",
+  "version": "2.0.0",
+  "lastUpdated": "2026-10-27",
+  "methodology": "Regional projections synthesized from NASA NEX-GDDP-CMIP6, NASA Sea Level Projection Tool (IPCC AR6), CGWB, GSDA, WOTR, and peer-reviewed glaciological and agronomic studies. Visual overlays strictly represent scientific projections, not deterministic predictions.",
+  "sources": [
+    {
+      "id": "nasa-sea-level-ar6",
+      "title": "NASA Sea Level Projection Tool (IPCC Sixth Assessment Report Chapter 9)",
+      "author": "NASA Center for Climate Simulation / IPCC WG1",
+      "year": 2021,
+      "url": "https://sealevel.nasa.gov/ipcc-ar6-sea-level-projection-tool",
+      "usedFor": ["Mumbai relative sea level rise", "Marine Drive flood lines", "High-tide astronomical flood days"]
+    },
+    {
+      "id": "mcap-wri-2022",
+      "title": "Mumbai Climate Action Plan (MCAP): Coastal Flooding Assessment",
+      "author": "Brihanmumbai Municipal Corporation & WRI India",
+      "year": 2022,
+      "url": "https://www.wri-india.org/news/mumbai-climate-action-plan-2022-released",
+      "usedFor": ["Mahim commercial shopfront risks", "Mithi river mouth ground-floor home exposure"]
+    },
+    {
+      "id": "gangotri-kumar-2017",
+      "title": "Glacier changes and river runoff in the Bhagirathi river basin, Garhwal Himalaya",
+      "author": "Kumar, R., Singh, P., Khurshid, A., et al. (Journal of Hydrology)",
+      "year": 2017,
+      "url": "https://doi.org/10.1016/j.jhydrol.2017.07.033",
+      "usedFor": ["Gangotri snout retreat rates", "Bhagirathi pre-monsoon dry season lean discharge", "High-altitude temperature anomalies"]
+    },
+    {
+      "id": "gangotri-bhambri-2012",
+      "title": "Recession of Gangotri Glacier, Garhwal Himalaya, India (1965–2006)",
+      "author": "Bhambri, R., Bolch, T., Chaujar, R.K. (Current Science)",
+      "year": 2012,
+      "url": "https://www.currentscience.ac.in/Volumes/102/03/0489.pdf",
+      "usedFor": ["Gaumukh terminus recession metrics", "Proglacial moraine dam expansion", "Snow cover duration days"]
+    },
+    {
+      "id": "nasa-nex-gddp-cmip6",
+      "title": "NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
+      "author": "NASA Center for Climate Simulation (NCCS)",
+      "year": 2022,
+      "url": "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6",
+      "usedFor": ["Karnal daily tasmax, tasmin, and pr series", "March terminal heat stress days during grain-fill"]
+    },
+    {
+      "id": "cgwb-haryana-2023",
+      "title": "Dynamic Ground Water Resources of Haryana",
+      "author": "Central Ground Water Board (CGWB) & State Agriculture Department",
+      "year": 2023,
+      "url": "https://cgwb.gov.in/en/ground-water-assessment",
+      "usedFor": ["Karnal alluvial aquifer drawdown", "Tube-well re-drilling depths and smallholder pump costs", "Wheat harvest yield losses"]
+    },
+    {
+      "id": "gsda-maharashtra-2022",
+      "title": "Groundwater Assessment and Drought Vulnerability in Marathwada",
+      "author": "Groundwater Surveys and Development Agency (GSDA), Pune",
+      "year": 2022,
+      "url": "https://gsda.maharashtra.gov.in/reports",
+      "usedFor": ["Village water tanker demand numbers", "Shallow basalt open well water tables in Beed & Chhatrapati Sambhajinagar"]
+    },
+    {
+      "id": "wotr-resilience-2021",
+      "title": "Assessment of Climate Change Vulnerability in Marathwada and Watershed Adaptation",
+      "author": "Watershed Organisation Trust (WOTR) Centre for Resilience Studies",
+      "year": 2021,
+      "url": "https://wotr.org/publications/",
+      "usedFor": ["Contour stone bunding and terrace soil retention capacity", "Soil organic carbon improvements", "Monsoon dry spell buffers"]
+    }
+  ],
+  "imageAssets": [
+    {
+      "file": "public/img/mumbai.webp",
+      "subject": "Mumbai Marine Drive Promenade and Arabian Sea Coastline",
+      "sizeKB": 129.6,
+      "format": "WebP",
+      "honestyLabel": "Photograph + Data-based flood projection",
+      "license": "Project Demonstration Media (Under 150 KB Optimized)"
+    },
+    {
+      "file": "public/img/gangotri.webp",
+      "subject": "Gangotri Glacier Valley, Gaumukh Terminus, and Bhagirathi Peaks",
+      "sizeKB": 123.5,
+      "format": "WebP",
+      "honestyLabel": "Photograph + Glacial retreat projection",
+      "license": "Project Demonstration Media (Under 150 KB Optimized)"
+    },
+    {
+      "file": "public/img/karnal.webp",
+      "subject": "Haryana Wheat Plains, Electric Tube-Well Pump, and Alluvial Farmland",
+      "sizeKB": 128.0,
+      "format": "WebP",
+      "honestyLabel": "Photograph + Heat & groundwater projection",
+      "license": "Project Demonstration Media (Under 150 KB Optimized)"
+    },
+    {
+      "file": "public/img/marathwada.webp",
+      "subject": "Deccan Plateau Terraced Watershed, Stone Bunds, and Village Open Well",
+      "sizeKB": 124.0,
+      "format": "WebP",
+      "honestyLabel": "Photograph + Watershed adaptation projection",
+      "license": "Project Demonstration Media (Under 150 KB Optimized)"
+    }
+  ]
+}

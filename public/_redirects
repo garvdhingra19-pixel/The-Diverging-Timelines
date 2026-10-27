@@ -1,0 +1,5 @@
+# Cloudflare Pages / Netlify static redirects
+/mumbai /?place=mumbai 301
+/gangotri /?place=gangotri 301
+/karnal /?place=karnal 301
+/marathwada /?place=marathwada 301

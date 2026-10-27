@@ -1,0 +1,129 @@
+{
+  "id": "marathwada",
+  "name": "Marathwada Rain-Shadow Plateau",
+  "region": "Chhatrapati Sambhajinagar & Beed, Maharashtra · Deccan Trap Plateau",
+  "summary": "Drought-prone semi-arid plateau experiencing erratic rainfall and soil erosion, pioneering community-led watershed restoration and stone terracing.",
+  "baselineYear": 2025,
+  "coordinates": {
+    "lat": 19.8762,
+    "lng": 75.3433
+  },
+  "hotspots": [
+    {
+      "id": "marathwada-village-well",
+      "title": "Village Community Well & Recharge Shaft",
+      "x": 68,
+      "y": 62,
+      "description": "Traditional stone dug-well tapping shallow fractured basalt aquifers for village drinking water.",
+      "category": "water",
+      "impactCarryOn": "Prolonged 45-day rainless spells cause shallow open wells to dry up, leaving domestic water taps empty.",
+      "impactProtect": "Rooftop runoff and sub-surface recharge shafts replenish the basalt aquifer, keeping the village well functional year-round."
+    },
+    {
+      "id": "marathwada-watershed-terraces",
+      "title": "Contour Bunds & Stone Terracing Slopes",
+      "x": 35,
+      "y": 42,
+      "description": "Engineered slope terracing with continuous contour trenches (CCT) designed to catch and soak monsoon downpours.",
+      "category": "adaptation",
+      "impactCarryOn": "Intense erratic cloudbursts wash away topsoil on unprotected slopes, stripping fertile silt and silting farm ponds.",
+      "impactProtect": "Continuous contour trenches and stone bunding slow monsoon runoff, retaining rich black cotton soil on terraces."
+    },
+    {
+      "id": "marathwada-grazing-pasture",
+      "title": "Community Grazing Common & Fodder Bank",
+      "x": 52,
+      "y": 26,
+      "description": "Shared village commons managed for livestock grazing, drought-tolerant legumes, and silvopasture.",
+      "category": "agriculture",
+      "impactCarryOn": "Severe soil moisture deficit stunts seasonal grasses, forcing water tankers and emergency fodder procurement.",
+      "impactProtect": "Agroforestry tree belts, vetiver hedges, and multi-species silage banks secure local livestock fodder through dry spells."
+    }
+  ],
+  "stats": [
+    {
+      "id": "marathwada-tanker-villages",
+      "label": "Water Tanker Demand",
+      "unit": "villages",
+      "baseline": 840,
+      "carryOn2050": 2150,
+      "carryOn2100": 3400,
+      "protect2050": 320,
+      "protect2100": 160,
+      "direction": "up",
+      "context": "Habitations requiring emergency governmental water tanker supply during pre-monsoon dry months."
+    },
+    {
+      "id": "marathwada-soil-carbon",
+      "label": "Soil Organic Carbon",
+      "unit": "%",
+      "baseline": 0.42,
+      "carryOn2050": 0.28,
+      "carryOn2100": 0.18,
+      "protect2050": 0.65,
+      "protect2100": 0.88,
+      "direction": "down",
+      "context": "Topsoil biological carbon content governing water infiltration and moisture retention in black basalt soils."
+    },
+    {
+      "id": "marathwada-monsoon-break",
+      "label": "Longest Monsoon Dry Spell",
+      "unit": "days",
+      "baseline": 22,
+      "carryOn2050": 34,
+      "carryOn2100": 46,
+      "protect2050": 20,
+      "protect2100": 17,
+      "direction": "up",
+      "context": "Consecutive rainless days during critical Kharif crop growth phases leading to temporary wilting."
+    },
+    {
+      "id": "marathwada-terrace-retention",
+      "label": "Watershed Soil Retention",
+      "unit": "t / ha / yr",
+      "baseline": 11,
+      "carryOn2050": 5,
+      "carryOn2100": 3,
+      "protect2050": 22,
+      "protect2100": 28,
+      "direction": "down",
+      "context": "Fertile topsoil retained on terraced farmlands through community stone bunding and contour work."
+    }
+  ],
+  "scenarios": {
+    "carryOn": {
+      "tagline": "Rainfall Volatility & Topsoil Loss (SSP5-8.5)",
+      "description": "Widening monsoon dry spells and intense erratic downpours strip unbunded topsoil, depleting unmanaged shallow wells across the rain-shadow plateau.",
+      "keyPoints": [
+        "Monsoon dry spells stretch beyond 40 days, stressing rainfed pulses and oilseeds",
+        "Over 3,400 villages face chronic seasonal water tanker dependency",
+        "Severe soil organic matter oxidation compromises agricultural land carrying capacity"
+      ],
+      "projectedTempRise2100": 4.3
+    },
+    "protect": {
+      "tagline": "Decentralized Watershed Regeneration (SSP1-1.9)",
+      "description": "Ridge-to-valley watershed treatment, farm ponds, continuous contour trenches, and organic soil enrichment build enduring hydrological resilience.",
+      "keyPoints": [
+        "Community contour stone bunding captures 85% of surface monsoon runoff",
+        "Decentralized recharge shafts restore year-round water tables in open wells",
+        "Diversified agroforestry and millet cultivation eliminate emergency water tanker needs"
+      ],
+      "projectedTempRise2100": 1.5
+    }
+  },
+  "sources": [
+    {
+      "title": "Dynamic Groundwater Resources of Maharashtra (District-Wise Assessments)",
+      "institution": "Groundwater Surveys and Development Agency (GSDA) & CGWB",
+      "url": "https://gsda.maharashtra.gov.in/reports",
+      "year": 2022
+    },
+    {
+      "title": "Assessment of Climate Change Vulnerability in Marathwada and Watershed Adaptation",
+      "institution": "Watershed Organisation Trust (WOTR) Centre for Resilience Studies",
+      "url": "https://wotr.org/publications/",
+      "year": 2021
+    }
+  ]
+}

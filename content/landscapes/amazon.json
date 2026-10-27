@@ -1,0 +1,129 @@
+{
+  "id": "amazon",
+  "name": "Amazon Rainforest",
+  "region": "Amazon Basin · Brazil / Peru / Colombia",
+  "summary": "The lungs of the planet facing a dangerous tipping point from combined deforestation and climate-induced megadroughts.",
+  "baselineYear": 2025,
+  "coordinates": {
+    "lat": -3.4653,
+    "lng": -62.2159
+  },
+  "hotspots": [
+    {
+      "id": "amazon-canopy-strata",
+      "title": "Primary Emergent Canopy",
+      "x": 48,
+      "y": 36,
+      "description": "Dense multilayered canopy driving continental-scale 'flying rivers' through evapo-transpiration.",
+      "category": "ecology",
+      "impactCarryOn": "Canopy dieback converts dense humid rainforest into dry, fire-prone degraded savannah.",
+      "impactProtect": "Reconnected biological corridors maintain moisture recycling across the South American continent."
+    },
+    {
+      "id": "amazon-rio-negro",
+      "title": "Rio Negro & Fluvial Floodplains",
+      "x": 28,
+      "y": 68,
+      "description": "Vital freshwater tributary network regulating regional hydration and indigenous transit.",
+      "category": "flood",
+      "impactCarryOn": "Record-shattering drought episodes strand riverine villages and dry up shallow oxbow lakes.",
+      "impactProtect": "Riparian buffer protections prevent riverbed silting and protect endemic aquatic biodiversity."
+    },
+    {
+      "id": "amazon-arc-deforestation",
+      "title": "Southern Arc of Deforestation",
+      "x": 72,
+      "y": 74,
+      "description": "Agricultural expansion frontier where fragmentation invites runaway wildfires.",
+      "category": "adaptation",
+      "impactCarryOn": "Fragmented forest perimeter triggers uncontrolled seasonal firestorms and carbon sink inversion.",
+      "impactProtect": "Enforced zero-deforestation mandates, satellite monitoring, and agroforestry restore frontier zones."
+    }
+  ],
+  "stats": [
+    {
+      "id": "amazon-forest-cover",
+      "label": "Original Canopy Retained",
+      "unit": "%",
+      "baseline": 81,
+      "carryOn2050": 63,
+      "carryOn2100": 42,
+      "protect2050": 85,
+      "protect2100": 89,
+      "direction": "down",
+      "context": "Percentage of pristine primary Amazonian rainforest cover remaining intact."
+    },
+    {
+      "id": "amazon-carbon-storage",
+      "label": "Forest Carbon Balance",
+      "unit": "Gt CO2/yr",
+      "baseline": -0.4,
+      "carryOn2050": 1.2,
+      "carryOn2100": 2.8,
+      "protect2050": -1.1,
+      "protect2100": -1.8,
+      "direction": "up",
+      "context": "Net carbon flux (negative indicates carbon sink, positive indicates net emission source)."
+    },
+    {
+      "id": "amazon-dry-season",
+      "label": "Dry Season Duration",
+      "unit": "months/yr",
+      "baseline": 3.4,
+      "carryOn2050": 5.1,
+      "carryOn2100": 6.7,
+      "protect2050": 3.5,
+      "protect2100": 3.2,
+      "direction": "up",
+      "context": "Months with less than 100mm precipitation, exacerbating wildfire flammability."
+    },
+    {
+      "id": "amazon-biodiversity",
+      "label": "Vertebrate Species at Risk",
+      "unit": "% species",
+      "baseline": 18,
+      "carryOn2050": 48,
+      "carryOn2100": 74,
+      "protect2050": 21,
+      "protect2100": 16,
+      "direction": "up",
+      "context": "Fraction of endemic flora and fauna facing severe habitat suitability loss."
+    }
+  ],
+  "scenarios": {
+    "carryOn": {
+      "tagline": "Savannization Collapse (SSP5-8.5)",
+      "description": "Surpassing the 20-25% cumulative deforestation threshold triggers irreversible dieback of 40-60% of the Amazon basin.",
+      "keyPoints": [
+        "Amazon flips permanently from net carbon sink to major greenhouse gas emitter",
+        "Disruption of South American monsoon rainfall imperiling agriculture thousands of miles away",
+        "Catastrophic loss of world's richest terrestrial biodiversity"
+      ],
+      "projectedTempRise2100": 4.8
+    },
+    "protect": {
+      "tagline": "Bioeconomy & Conservation (SSP1-1.9)",
+      "description": "Zero net deforestation, demarcated indigenous reserves, and high-value non-timber bioeconomy preserve forest resilience.",
+      "keyPoints": [
+        "Deforestation curtailed to near-zero with 30 million hectares reforested",
+        "Empowered indigenous territorial governance across 300+ reserves",
+        "Flying rivers fully sustained, protecting continental rainfall regimes"
+      ],
+      "projectedTempRise2100": 1.7
+    }
+  },
+  "sources": [
+    {
+      "title": "Amazon Assessment Report 2021",
+      "institution": "Science Panel for the Amazon (SPA) / United Nations SDSN",
+      "url": "https://www.theamazonwewant.org/spa-reports/",
+      "year": 2021
+    },
+    {
+      "title": "Tipping point in the Amazon rainforest: A review of critical drivers",
+      "institution": "Nature Reviews Earth & Environment",
+      "url": "https://doi.org/10.1038/s43017-021-00234-4",
+      "year": 2021
+    }
+  ]
+}

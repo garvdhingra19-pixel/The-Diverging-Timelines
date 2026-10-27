@@ -1,0 +1,129 @@
+{
+  "id": "mumbai",
+  "name": "Mumbai Coastline",
+  "region": "Maharashtra, India \u00b7 Arabian Sea Basin",
+  "summary": "Dense coastal megacity vulnerable to regional sea level rise, astronomical king-tide flooding, and Mithi river mouth storm surges.",
+  "baselineYear": 2025,
+  "coordinates": {
+    "lat": 18.922,
+    "lng": 72.8347
+  },
+  "hotspots": [
+    {
+      "id": "mumbai-commuters-rail",
+      "title": "Suburban Rail & Marine Drive Transit",
+      "x": 34,
+      "y": 62,
+      "description": "Daily transit corridor carrying 3.5 million commuters along the western coastal edge.",
+      "category": "infrastructure",
+      "impactCarryOn": "Water here submerges train tracks and halts commuter rail lines during routine high-tide surges.",
+      "impactProtect": "Tiered seawall revetments block wave splash and automated pumps clear rail ballast in 15 minutes."
+    },
+    {
+      "id": "mumbai-shops-mahim",
+      "title": "Mahim Causeway Commercial Market",
+      "x": 62,
+      "y": 48,
+      "description": "Dense retail street with over 400 ground-floor shops, pharmacies, and small businesses.",
+      "category": "adaptation",
+      "impactCarryOn": "Water here reaches this shopfront's door during spring tides, ruining stock and forcing shop closures.",
+      "impactProtect": "Tidal backflow gates and raised pedestrian curbs keep street water away from shopfront thresholds."
+    },
+    {
+      "id": "mumbai-homes-mithi",
+      "title": "Mithi River Estuary Ground-Floor Homes",
+      "x": 48,
+      "y": 78,
+      "description": "Vulnerable ground-floor residential homes bordering the tidal Mithi river mouth.",
+      "category": "flood",
+      "impactCarryOn": "Water here enters ground-floor living rooms up to window sills, forcing families to flee upstairs.",
+      "impactProtect": "Restored mangrove wetlands slow tidal surges and elevated home plinths keep living rooms dry."
+    }
+  ],
+  "stats": [
+    {
+      "id": "mumbai-sea-level-rise",
+      "label": "Sea Level Rise (AR6)",
+      "unit": "cm",
+      "baseline": 4.0,
+      "carryOn2050": 29.0,
+      "carryOn2100": 88.0,
+      "protect2050": 16.0,
+      "protect2100": 36.0,
+      "direction": "up",
+      "context": "Regional relative mean sea level rise above 2020 baseline at Mumbai tide gauge."
+    },
+    {
+      "id": "mumbai-hightide-flooding",
+      "label": "High-Tide Flood Days",
+      "unit": "days / yr",
+      "baseline": 14,
+      "carryOn2050": 58,
+      "carryOn2100": 142,
+      "protect2050": 26,
+      "protect2100": 38,
+      "direction": "up",
+      "context": "Days where astronomical high tides breach coastal stormwater drains in low-lying transit corridors."
+    },
+    {
+      "id": "mumbai-shop-losses",
+      "label": "Annual Commercial Losses",
+      "unit": "\u20b9 Cr / yr",
+      "baseline": 120,
+      "carryOn2050": 680,
+      "carryOn2100": 2400,
+      "protect2050": 190,
+      "protect2100": 150,
+      "direction": "up",
+      "context": "Direct physical inventory and operational damage to ground-floor retail shops along coastal roads."
+    },
+    {
+      "id": "mumbai-homes-inundated",
+      "label": "Ground-Floor Homes at Risk",
+      "unit": "k homes",
+      "baseline": 45,
+      "carryOn2050": 165,
+      "carryOn2100": 380,
+      "protect2050": 65,
+      "protect2100": 50,
+      "direction": "up",
+      "context": "Ground-floor residences in Mithi basin and Mahim facing recurrent seasonal tidal water intrusion."
+    }
+  ],
+  "scenarios": {
+    "carryOn": {
+      "tagline": "Unabated High-Tide Inundation (SSP5-8.5)",
+      "description": "Regional sea levels rise by up to 88 cm by 2100 (and 165 cm by 2150), turning monthly high tides into citywide transit shutdowns and chronic ground-floor flooding.",
+      "keyPoints": [
+        "High-tide flood frequency escalates tenfold by 2075",
+        "Routine saltwater inundation paralyzes Western and Harbour commuter train corridors",
+        "Ground-floor commercial shops face over \u20b92,400 Crore in recurring inventory losses"
+      ],
+      "projectedTempRise2100": 4.1
+    },
+    "protect": {
+      "tagline": "Integrated Coastal Resilience (SSP1-1.9)",
+      "description": "Paris Agreement stabilization paired with 2,400 hectares of mangrove restoration, tidal gates, and raised permeable infrastructure limits mean sea level rise to 36 cm.",
+      "keyPoints": [
+        "Restored mangrove sponges absorb 60% of cyclonic wave energy along Mithi mouth",
+        "Automated high-capacity flood pumps safeguard critical commuter rail lines",
+        "Community-level raised thresholds protect over 100,000 ground-floor homes"
+      ],
+      "projectedTempRise2100": 1.5
+    }
+  },
+  "sources": [
+    {
+      "title": "NASA Sea Level Projection Tool (IPCC Sixth Assessment Report: Chapter 9 Ocean, Cryosphere and Sea Level Change)",
+      "institution": "NASA Center for Climate Simulation / IPCC WG1",
+      "url": "https://sealevel.nasa.gov/ipcc-ar6-sea-level-projection-tool",
+      "year": 2021
+    },
+    {
+      "title": "Mumbai Climate Action Plan (MCAP): Coastal Flooding and Climate Risks Assessment",
+      "institution": "Brihanmumbai Municipal Corporation & World Resources Institute",
+      "url": "https://www.wri-india.org/news/mumbai-climate-action-plan-2022-released",
+      "year": 2022
+    }
+  ]
+}

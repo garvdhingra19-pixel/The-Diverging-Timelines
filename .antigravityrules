@@ -1,0 +1,19 @@
+# Antigravity AI Execution Policies & Safeguards
+# Repository: global-warming (TerraScope)
+
+## 1. Credential & Secret Protection (Strict)
+- STRICTLY PROHIBIT the hardcoding of API keys, tokens, database connection strings, or cloud credentials in any source code, configuration, or documentation file.
+- All secrets, API credentials, and environment-specific keys must strictly reside in `.env.local` or environment variables and NEVER be committed to Git.
+- Never prefix sensitive secrets with `NEXT_PUBLIC_`. The client bundle must remain completely zero-credential.
+
+## 2. Test Suite Preservation (Strict)
+- BLOCK THE DELETION of existing Vitest, Jest, Playwright, or accessibility test files under `/tests/` or any test suite directory.
+- Modifications to tests are permitted ONLY to expand coverage or update test expectations to reflect intentional, approved specification changes. Removing assertions or deleting test files to bypass failing checks is strictly forbidden.
+
+## 3. Data Pipeline & Content Integrity (Strict)
+- MANDATE that all Python data pipeline scripts (`/data-pipeline/`) and automated ingestion tools must pass complete Zod schema validation (`/content/schema.ts`) before writing to or modifying files in the `/content/` directory.
+- Any output from Python pipelines that lacks required fields or fails validation must be aborted immediately before modifying canonical content.
+
+## 4. Static Export & CSP Compliance
+- Ensure all pages and layouts remain strictly compatible with Next.js static export (`output: "export"`).
+- Enforce strict Content-Security-Policy (CSP) compliance. Inline executable scripts without nonces or hashes and insecure external protocol loads are prohibited.

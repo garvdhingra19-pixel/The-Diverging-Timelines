@@ -1,0 +1,129 @@
+{
+  "id": "gangotri",
+  "name": "Gangotri Glacier & Upper Ganga",
+  "region": "Uttarkashi, Uttarakhand · Garhwal Himalaya",
+  "summary": "Glacial source of the sacred Bhagirathi river undergoing accelerated recession, threatening dry-season baseflow for millions downstream.",
+  "baselineYear": 2025,
+  "coordinates": {
+    "lat": 30.9947,
+    "lng": 78.9398
+  },
+  "hotspots": [
+    {
+      "id": "gangotri-gaumukh-snout",
+      "title": "Gaumukh Snout & Proglacial Moraine Dam",
+      "x": 42,
+      "y": 45,
+      "description": "Glacial terminus at 4,000m where Bhagirathi emerges, surrounded by unconsolidated lateral moraines.",
+      "category": "cryosphere",
+      "impactCarryOn": "Glacier snout retreats over 45 meters per year, expanding unstable moraine lakes that threaten sudden outburst floods.",
+      "impactProtect": "Glacial melting stabilizes with snout retreat slowing to under 14 meters per year, preserving seasonal ice buffers."
+    },
+    {
+      "id": "gangotri-pilgrim-trail",
+      "title": "Gangotri Temple Town & Pilgrim Ghats",
+      "x": 64,
+      "y": 62,
+      "description": "Sacred shrine town hosting over 500,000 pilgrims during the annual Char Dham Yatra pilgrimage.",
+      "category": "infrastructure",
+      "impactCarryOn": "Bhagirathi dry-season lean flow drops by 52%, leaving holy bathing ghats and pilgrim water intakes dry before monsoon.",
+      "impactProtect": "Protected upper-catchment forestry and check dams maintain steady perennial river baseflow for downstream pilgrims."
+    },
+    {
+      "id": "gangotri-valley-orchards",
+      "title": "Harsil Valley Terraced Apple Orchards",
+      "x": 28,
+      "y": 74,
+      "description": "High-altitude Himalayan valley villages reliant on snowmelt channels for terraced fruit orchards.",
+      "category": "agriculture",
+      "impactCarryOn": "Winter snowfall deficits and early spring heat force farmers to abandon low-altitude orchards, driving village out-migration.",
+      "impactProtect": "Community snow-harvesting reservoirs and micro-sprinklers safeguard terraced orchards and village livelihoods."
+    }
+  ],
+  "stats": [
+    {
+      "id": "gangotri-retreat-rate",
+      "label": "Snout Annual Retreat",
+      "unit": "m / yr",
+      "baseline": 21.0,
+      "carryOn2050": 38.0,
+      "carryOn2100": 48.0,
+      "protect2050": 18.0,
+      "protect2100": 14.0,
+      "direction": "up",
+      "context": "Annual recession rate of Gaumukh glacier terminus based on satellite and field geodetic surveys."
+    },
+    {
+      "id": "gangotri-dry-season-flow",
+      "label": "Pre-Monsoon Lean Flow",
+      "unit": "m³ / s",
+      "baseline": 185.0,
+      "carryOn2050": 125.0,
+      "carryOn2100": 88.0,
+      "protect2050": 165.0,
+      "protect2100": 158.0,
+      "direction": "down",
+      "context": "Average April–May lean-season river discharge at Devprayag before monsoon rains begin."
+    },
+    {
+      "id": "gangotri-temp-anomaly",
+      "label": "Himalayan Temp Anomaly",
+      "unit": "°C",
+      "baseline": 1.6,
+      "carryOn2050": 3.4,
+      "carryOn2100": 5.2,
+      "protect2050": 2.1,
+      "protect2100": 1.8,
+      "direction": "up",
+      "context": "Elevation-dependent warming anomaly across high Garhwal Himalayan peaks above 3,500m."
+    },
+    {
+      "id": "gangotri-snow-cover-days",
+      "label": "Seasonal Snow Cover",
+      "unit": "days / yr",
+      "baseline": 142,
+      "carryOn2050": 95,
+      "carryOn2100": 55,
+      "protect2050": 128,
+      "protect2100": 135,
+      "direction": "down",
+      "context": "Days per year with continuous snowpack cover regulating spring recharge in upper catchment."
+    }
+  ],
+  "scenarios": {
+    "carryOn": {
+      "tagline": "Cryosphere Collapse & Lean-Season Scarcity (SSP5-8.5)",
+      "description": "Rapid loss of Himalayan glacial mass leads to initial flash flooding followed by severe pre-monsoon drying across the entire upper Ganga river basin.",
+      "keyPoints": [
+        "Gaumukh retreats more than 3.5 kilometers upstream by 2100",
+        "Pre-monsoon river volume drops by over 50%, curtailing hydro-power and drinking water",
+        "Fragile moraine dam failures elevate catastrophic glacial outburst flood risks"
+      ],
+      "projectedTempRise2100": 5.2
+    },
+    "protect": {
+      "tagline": "Glacial Stabilization & Watershed Stewardship (SSP1-1.9)",
+      "description": "Meeting Paris climate thresholds curtails high-altitude warming, allowing glacier accumulation zones to stabilize while alpine watershed work protects river flow.",
+      "keyPoints": [
+        "Glacial recession rate slows to under 14 meters annually, preserving long-term ice mass",
+        "Regenerated birch and alpine rhododendron buffers reduce slope erosion into river channels",
+        "Sustainable pilgrimage regulations protect fragile high-altitude ecological equilibrium"
+      ],
+      "projectedTempRise2100": 1.8
+    }
+  },
+  "sources": [
+    {
+      "title": "Glacier changes and river runoff in the Bhagirathi river basin, Garhwal Himalaya",
+      "institution": "Journal of Hydrology / Wadia Institute of Himalayan Geology",
+      "url": "https://doi.org/10.1016/j.jhydrol.2017.07.033",
+      "year": 2017
+    },
+    {
+      "title": "Recession of Gangotri Glacier, Garhwal Himalaya, India (1965–2006)",
+      "institution": "Current Science / Centre for Glaciology",
+      "url": "https://www.currentscience.ac.in/Volumes/102/03/0489.pdf",
+      "year": 2012
+    }
+  ]
+}
